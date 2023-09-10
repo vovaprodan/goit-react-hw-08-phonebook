@@ -7,6 +7,8 @@ margin-top: 30px;
 background-color: aquamarine;
 border-radius: 5px;
 padding-bottom: 100px;
+border: 2px solid aquamarine;
+box-shadow: 0 1px 10px black;
 }
 .phonebook {
     text-align: center;
