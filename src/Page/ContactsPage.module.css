@@ -1,0 +1,14 @@
+.contact {
+width: 350px;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+background-color: aquamarine;
+border-radius: 5px;
+padding-bottom: 100px;
+}
+.phonebook {
+    text-align: center;
+    padding-top: 20px;
+}

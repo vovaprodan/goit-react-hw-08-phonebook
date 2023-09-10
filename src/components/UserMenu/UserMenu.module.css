@@ -1,0 +1,15 @@
+.user {
+    color: blue;
+    font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-right: 10px;
+}
+.button {
+    width: 70px;
+    height: 25px;
+    background-color: blue;
+    color: aliceblue;
+    border: 0;
+    border-radius: 5px;
+}
