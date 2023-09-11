@@ -24,6 +24,13 @@
     line-height: 1.5;
     font-weight: 500;
 }
+.linkActive {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
 .login {
     display: flex;
     gap: 10px;

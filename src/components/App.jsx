@@ -3,7 +3,7 @@ import  { Toaster } from 'react-hot-toast';
 import { useDispatch, useSelector} from 'react-redux';
 import {   selectorIsLoading, selectorError} from '../redux/contactsRedux'
 import css from './App.module.css';
-import { Link, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import UserMenu from "./UserMenu/UserMenu";
 import { refreshUser, selectorAuthenticated } from "redux/authReduser";
 import { PrivateRoute } from "./PrivateRout.jsx/PrivateRoute";
@@ -31,13 +31,14 @@ const App = () => {
   return (
     
     <div className={css.div}>
-       <nav className={css.nav}>
-        <Link className={css.link} to="/">Home</Link>
+      <nav className={css.nav}>
+       
+        <NavLink className={({isActive}) => (isActive ? css.linkActive : css.link )} to="/">Home</NavLink>
         {authenticated ? (<>
-          <Link className={css.link} to="/contacts">Contacts</Link>
+          <NavLink className={({isActive}) => (isActive ? css.linkActive : css.link )} to="/contacts">Contacts</NavLink>
           <UserMenu /></>) :
-          (<div className={css.login} ><Link className={css.link} to="/register">Register</Link>
-            <Link className={css.link} to="/login">Login</Link></div> )  }
+          (<div className={css.login} ><NavLink className={({isActive}) => (isActive ? css.linkActive : css.link )} to="/register">Register</NavLink>
+            <NavLink className={({isActive}) => (isActive ? css.linkActive : css.link )} to="/login">Login</NavLink></div> )  }
       </nav>
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
